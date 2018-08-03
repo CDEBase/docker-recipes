@@ -11,8 +11,7 @@ RUN mkdir -p /home/LogFiles \
      && apt install -y --no-install-recommends openssh-server vim curl wget tcptraceroute
 
 
-RUN chmod -R 777 /opt/startup \
-     && mkdir /opt/pm2 \
+RUN mkdir /opt/pm2 \
      && chmod 777 /opt/pm2 \
      && ln -s /opt/pm2/node_modules/pm2/bin/pm2 /usr/local/bin/pm2
 
